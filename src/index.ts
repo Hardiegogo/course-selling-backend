@@ -20,6 +20,8 @@ const customErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
   res.status(500).json({ message: "Something is broken in the server" });
 };
 
+//first draft
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(errorLogger);
